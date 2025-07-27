@@ -1,0 +1,20 @@
+﻿<Window x:Class="AI_AgentAutomation_Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AI Agent Process Automation Demo" Height="350" Width="500">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Müşteri Talebi Girin:" FontWeight="Bold" FontSize="14"/>
+        <TextBox Name="txtCustomerRequest" Grid.Row="1" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+
+        <Button Content="İşle" Grid.Row="2" Margin="0,10,0,10" Height="30" Click="ProcessRequest_Click"/>
+
+        <TextBlock Name="txtResult" Grid.Row="3" FontWeight="Bold" FontSize="14" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
