@@ -1,14 +1,22 @@
 # AI Agent Process Automation Demo
 
-Bu proje, basit bir müşteri talebi sınıflandırma ve otomatik yanıt önerme uygulamasıdır.  
-ML.NET kullanarak metin sınıflandırma modeli eğitilir ve WPF arayüzünde kullanıcı talepleri işlenir.
+Bu proje, müşteri taleplerini **makine öğrenmesi (ML.NET)** ile sınıflandıran ve bu sınıflandırmaya göre otomatik yanıt öneren basit bir uygulamadır.  
+WPF arayüzü üzerinden kullanıcıların talepleri alınır, eğitimli model sayesinde metinler kategorilere ayrılır ve ilgili cevaplar ekranda gösterilir.
+
+## Projenin AI Bölümü Hakkında
+
+- Projede kullanılan yapay zeka, Microsoft’un **ML.NET** kütüphanesi ile geliştirilmiş bir **metin sınıflandırma modeli**dir.  
+- Model, örnek müşteri taleplerinden oluşan veri setiyle eğitilir (train edilir). Bu işlem modelin hangi metnin hangi kategoriye ait olduğunu öğrenmesini sağlar.  
+- Kullanıcıdan gelen yeni metinler modele verilir ve model, metni öğrendiği kategorilerden birine atar (predict eder).  
+- Bu süreç, yapay zekanın temel mantığı olan “veriyle öğrenme ve tahmin etme” prensibine dayanır.  
+- Böylece gelen talepler otomatik olarak sınıflandırılır ve sürecin otomasyonuna temel oluşturur.
 
 ## Özellikler
 
-- Müşteri taleplerini dört ana kategoriye (Fatura/Ödeme, Teknik Destek, Abonelik İşlemleri, Genel) ayırır.  
-- ML.NET ile metin sınıflandırma modeli eğitimi ve tahmini.  
-- WPF tabanlı basit ve kullanıcı dostu arayüz.  
-- AI Agent Process Automation konseptinin demo uygulaması.
+- Dört ana müşteri talebi kategorisi: Fatura/Ödeme, Teknik Destek, Abonelik İşlemleri, Genel  
+- Yerel (offline) ML.NET modeli ile metin sınıflandırma  
+- Kullanıcı dostu WPF arayüzü ile kolay kullanım  
+- AI destekli süreç otomasyonuna giriş için demo uygulaması
 
 ## Kurulum ve Çalıştırma
 
@@ -22,7 +30,7 @@ ML.NET kullanarak metin sınıflandırma modeli eğitilir ve WPF arayüzünde ku
 
 - Ana ekranda müşteri talebinizi yazın.  
 - "İşle" butonuna basın.  
-- Sistem talebinizi sınıflandırıp önerilen cevabı gösterecektir.
+- Sistem talebinizi sınıflandırıp, kategoriye göre önerilen cevabı gösterir.
 
 ## Lisans
 
@@ -30,4 +38,4 @@ MIT License
 
 ---
 
-Bu demo, AI destekli süreç otomasyonuna giriş için hazırlanmıştır.
+Bu demo, AI destekli süreç otomasyonunun temel mantığını göstermek için hazırlanmıştır.
